@@ -1,0 +1,179 @@
+:root {
+    --color-1:#FFFFFF;
+    --color-2:#ef476f;
+    --color-3:#ffd166;
+    --color-4:#06d6a0;
+    --color-5:#118ac2;
+    --color-6: #073b4c;
+}
+
+*{
+    font-family: sans-serif, verdana;
+}
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+body{
+    background-color: var(--color-1);
+    margin: 0%;
+    padding: 0%;
+}
+
+#header{
+    border-style: outset;
+    width: 100%;
+    height:50px;
+    border-color: black;
+    border-width: 1px;
+    position: absolute;
+    top: 0px;
+    padding-left: 100px;
+    padding-top: 9px;
+    font-size: 32px;
+}
+
+#home{
+    position: absolute;
+    left:7px;
+    top:7px;
+    background: transparent;
+    border: none;
+}
+
+#home:hover{
+    text-shadow: 0px 0px 5px;
+}
+ 
+#logout{
+    position: absolute;
+    right:7px;
+    top:7px;
+    background: transparent;
+    border: none;
+}
+
+#logout:hover{
+    text-shadow: 0px 0px 5px;
+}
+
+#btn_cancel{
+    position: absolute;
+    right: 50px;
+    text-decoration: underline;
+    background-color: transparent;
+    border: none;
+    font-size: 15px;
+    width: 150px;
+}
+
+#btn_cancel:hover{
+    text-shadow: 0px 0px 1px;
+}
+
+#form{
+    margin: auto;
+    margin-top: 100px;
+    width: 70%;
+}
+
+#goal_name{
+    width: 300px;
+    height:40px;
+    font-size: 20px;
+    vertical-align: top;
+}
+
+#goal_desc{
+    width: 400px;
+    height:120px;
+    font-size: 16px;
+    
+}
+
+.smart{
+    font-weight: bold;
+    font-size: 30px;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+}
+
+.smart_desc{
+    text-align: center;
+    width: 200px;
+    height:40px;
+}
+
+.smart_input{
+    padding: 0%;
+    margin: 0%;
+    width: 400px;
+}
+
+#goal_area{
+    margin: 0%;
+    height: 40px;
+    width: 400px;
+    padding: 0%;
+    font-size: 18px;
+}
+
+#goal_unit{
+    margin: 0%;
+    height: 40px;
+    width: 400px;
+    padding: 0%;
+    font-size: 18px;
+}
+
+#goal_person{
+    margin: 0%;
+    height: 40px;
+    width: 400px;
+    padding: 0%;
+    font-size: 18px;
+}
+
+#goal_result{
+    margin: 0%;
+    height: 40px;
+    width: 400px;
+    padding: 0%;
+    font-size: 18px;
+}
+
+#goal_deadline{
+    margin: 0%;
+    height: 40px;
+    width: 400px;
+    padding: 0%;
+    font-size: 18px;
+}
+
+td{
+    border: solid;
+    border-width: 1px;
+}
+
+.td_right_arrow{
+    border:none;
+}
+
+#btn_next_step{
+    width: 250px;
+    height: 50px;
+    margin-top: 30px;
+    margin-left: 50%;
+    margin-right: 50%;
+    background-color: transparent;
+    border: solid;
+    border-radius: 15px;
+    font-size: 18px;
+}
+
+#btn_next_step:hover{
+    box-shadow: 0px 0px 5px;
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="create_goal_style.css">
+    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Create Goal</title>
+</head>
+<body>
+    <div id="header">
+        Goal Creation
+    </div>
+    <a href="home_screen.html">
+        <button id="home">
+            <i class="material-icons md-36">home</i>
+        </button>
+    </a>
+    <a href="index.html">
+        <button id="logout">
+            <i class="material-icons md-36">logout</i>
+        </button>
+    </a>
+    <a href="home_screen.html">
+        <button id="btn_cancel">cancel creation</button>
+    </a>
+    
+    
+    <form id="form">
+        <div>
+            <table><tr>
+                <td class="td_right_arrow"><i class="material-icons md-36">subdirectory_arrow_right</i></td>
+                <td class="td_right_arrow"><input type="text" id="goal_name" name="goal_name" placeholder="Goal Name"></td>
+            </tr></table>
+        </div>
+        <br>
+        <div>
+            <table><tr>
+                <td class="td_right_arrow"><i class="material-icons md-36">subdirectory_arrow_right</i></td>
+                <td class="td_right_arrow"><textarea name="goal_desc" id="goal_desc" rows="6" cols="70" wrap="soft" placeholder="Goal Description" style="resize:none;"></textarea></td>
+            </tr></table>
+        </div>
+        <br>
+        <table id="smart_row_1">
+            <tr>
+                <td class="smart">S</td>
+                <td class="smart">
+                    <i class="material-icons md-36">category</i>
+                </td>
+                <td class="smart_desc">Specific area :</td>
+                <td class="smart_input">
+                    <input type="text" id="goal_area", name="goal_area" placeholder="Example Area">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table id="smart_row_2">
+            <tr>
+                <td class="smart">M</td>
+                <td class="smart">
+                    <i class="material-icons md-36">trending_up</i>
+                </td>
+                <td class="smart_desc">Measure Unit :</td>
+                <td class="smart_input">
+                    <select name="goal_unit" id="goal_unit">
+                        <option>grams</option>
+                        <option>kilograms</option>
+                        <option>tons</option>
+                        <option>meters</option>
+                        <option>kilometers</option>
+                        <option>us dollars</option>
+                        <option>euros</option>
+                        <option>uk pounds</option>
+                        <option>seconds</option>
+                        <option>minutes</option>
+                        <option>hours</option>
+                        <option>days</option>
+                        <option>weeks</option>
+                        <option>months</option>
+                        <option>years</option>
+                        <option>custom</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table id="smart_row_3">
+            <tr>
+                <td class="smart">A</td>
+                <td class="smart">
+                    <i class="material-icons md-36">people</i>
+                </td>
+                <td class="smart_desc">Assigned To :</td>
+                <td class="smart_input">
+                    <input type="text" id="goal_person", name="goal_person" placeholder="Random Person">
+                </td>
+            </tr>
+        </table>
+        <br>
+        <table id="smart_row_4">
+            <tr>
+                <td class="smart">R</td>
+                <td class="smart">
+                    <i class="material-icons md-36">task_alt</i>
+                </td>
+                <td class="smart_desc">Realistic Result :</td>
+                <td class="smart_input">
+                    <input type="number" id="goal_result", name="goal_result" placeholder=1>
+                </td>
+                <td style="border:none; padding-left:5px;">Units</td>
+            </tr>
+        </table>
+        <br>
+        <table id="smart_row_5">
+            <tr>
+                <td class="smart">T</td>
+                <td class="smart">
+                    <i class="material-icons md-36">schedule</i>
+                </td>
+                <td class="smart_desc">Time Bound :</td>
+                <td class="smart_input">
+                    <input type="date" id="goal_deadline", name="goal_deadline">
+                </td>
+            </tr>
+        </table>
+    </form>
+    <a href="set_targets.html">
+        <button id="btn_next_step">Next Step</button>
+    </a>
+</body>
+</html>
