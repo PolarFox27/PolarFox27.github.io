@@ -4,39 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Goals</title>
-    <link rel="stylesheet" href="home_screen_style.css">
-    <link rel="shortcut icon" href="images/logo.png">
+    <link rel="stylesheet" href="/css/base_style.css">
+    <link rel="stylesheet" href="/css/home_screen_style.css">
+    <link rel="shortcut icon" href="/images/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>See Goals</title>
 </head>
 <body>
-    <div id="header">
-        Goal List
+    <div class="header">
+        <a href="home_screen.html" class="header-item material-icons md-36 header_btn">home</a>
+        <div class="header-item header_title">Goal List</div>
+        <a href="index.html" class="header-item material-icons md-36 header_btn">logout</a>
     </div>
-    <a href="home_screen.html">
-        <button id="home">
-            <i class="material-icons md-36">home</i>
-        </button>
-    </a>
-    <a href="index.html">
-        <button id="logout">
-            <i class="material-icons md-36">logout</i>
-        </button>
-    </a>
+
     <div id="goal_list">
-        <table><tr>
-            <td><i class="material-icons md-18">circle</i></td>
-            <td class="goal_name">Goal 1</td>
-            <td class="goal_area">Finance</td>
-            <td class="goal_deadline">12/3/2024</td>
-            <td class="goal_description">some description...</td>
-        </tr></table>
+        <a href="goal_details.html">
+            <button class="goal_entry"><table><tr>
+                <td><i class="material-icons md-18">circle</i></td>
+                <td class="goal_name">Goal 1</td>
+                <td class="goal_area">Finance</td>
+                <td class="goal_deadline">12/3/2024</td>
+                <td class="goal_description">some description...</td>
+            </tr></table></button>
+        </a>
     </div>
     <a href="create_goal.html">
         <button id="btn_create_goal">
             <i class="material-icons md-36">add_task</i>
             Create Goal</button>
     </a>
+
+    <div class="footer">
+        <div class="footer-item footer-text">All rights reserved to Matiss Berzins & Dorian Herbiet
+            <div class="material-icons md-18">copyright</div>
+        </div>
+        
+        <a href="https://en.wikipedia.org/wiki/SMART_criteria" class="footer-item footer-text">What is the SMART Framework ?</a>
+        <div class="footer-item footer-text">Made in Delft, The Netherlands
+            <div class="material-icons md-18">flag</div>
+        </div>
+    </div>
 </body>
 </html>
