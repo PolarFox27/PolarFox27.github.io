@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/create_goal_style.css">
+    <link rel="stylesheet" href="/css/edit_goal_style.css">
     <link rel="shortcut icon" href="/images/logo.png">
     <link rel="stylesheet" href="/css/base_style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
@@ -11,19 +11,16 @@
 <body>
     <div id="header">
         <a href="home_screen.html" class="header-item material-icons f36 header_btn">home</a>
-        <div class="header-item f36">Goal Creation</div>
+        <div class="header-item f36">Edit Goal</div>
         <a href="index.html" class="header-item material-icons f36 header_btn">logout</a>
     </div>
     <div id="content">
-        <a href="home_screen.html" id="cancel_btn_box">
-            <button id="cancel_btn" class="f18">cancel creation</button>
-        </a>
         <form id="form">
-            <div id="flexbox_name">
-                    <div class="td_right_arrow material-icons f36">subdirectory_arrow_right</div>
-                    <div class="td_right_arrow">
-                        <input type="text" class="f20" id="goal_name" name="goal_name" placeholder="Goal Name">
-                    </div>
+            <div>
+                <table><tr>
+                    <td class="td_right_arrow"><i class="material-icons f36">subdirectory_arrow_right</i></td>
+                    <td class="td_right_arrow"><input type="text" class="f20" id="goal_name" name="goal_name" placeholder="Goal Name"></td>
+                </tr></table>
             </div>
             <br>
             <div>
@@ -81,8 +78,11 @@
             </div>
         </form>
         <div class="flexbox">
-            <a href="set_targets.html">
-                <button id="btn_next_step" class="f18">Next Step</button>
+            <a href="goal_details.html">
+                <button id="btn_cancel" class="btn_bottom f18">Cancel</button>
+            </a>
+            <a href="goal_details.html">
+                <button id="btn_save" class="btn_bottom f18">Save Changes</button>
             </a>
         </div>
     </div>
