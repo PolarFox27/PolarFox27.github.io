@@ -37,12 +37,12 @@
     padding-top: 50px;
 }
 
-.top_btn{
+#edit{
     background: transparent;
     border: none;
 }
 
-.top_btn:hover{
+#edit:hover{
     text-shadow: 0 0 5px black;
 }
 
@@ -156,12 +156,8 @@ p{
     margin-bottom: 10px;
 }
 
-.notif_text{
+.notif_text, .target_text{
     text-indent: 10px;
-}
-
-.target_text{
-    padding-right: 10px;
 }
 
 .flex_target{
@@ -174,6 +170,6 @@ p{
 }
 
 .target_checkbox{
-    width:25px;
-    height:25px;
+    width:20px;
+    height:20px;
 }
