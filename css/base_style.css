@@ -19,10 +19,12 @@ a, button{
     vertical-align: bottom;
 }
 
+.f64, .material-icons.f64{font-size: 64px;}
 .f36, .material-icons.f36{font-size: 36px;}
 .f32, .material-icons.f32{font-size: 32px;}
 .f30, .material-icons.f30{font-size: 30px;}
 .f24, .material-icons.f24{font-size: 24px;}
+.f28, .material-icons.f28{font-size: 28px;}
 .f20, .material-icons.f20{font-size: 20px;}
 .f18, .material-icons.f18{font-size: 18px;}
 .f16, .material-icons.f16{font-size: 16px;}
@@ -34,7 +36,6 @@ a, button{
 .col4{color: var(--color-4);}
 .col5{color: var(--color-5);}
 .col6{color: var(--color-6);}
-
 
 
 body{
