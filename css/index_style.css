@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 .content {
@@ -13,9 +14,9 @@
 .sign-in-form {
   background: var(--color-3);
   width: 400px;
-  height: 465px;
+  height: 665px;
   position: relative;
-  margin: 165px auto;
+  margin: 90px auto;
   overflow: hidden;
 }
 
@@ -23,7 +24,6 @@
   width: 220px;
   margin: 50px auto;
   position: relative;
-  box-shadow: 0 0 30px 1px rgba(112, 112, 112, 0.5);
   border-radius: 20px;
   background: white;
 }
