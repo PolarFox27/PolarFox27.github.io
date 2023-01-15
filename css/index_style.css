@@ -14,10 +14,11 @@
 .sign-in-form {
   background: var(--color-3);
   width: 400px;
-  height: 665px;
+  height: 670px;
   position: relative;
   margin: 90px auto;
   overflow: hidden;
+  transition: .8s;
 }
 
 .slider-div {
