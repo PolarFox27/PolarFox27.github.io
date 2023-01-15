@@ -2,59 +2,75 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="/css/style_index.css">
-    <title>Login</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/base_style.css">
+  <link rel="stylesheet" href="/css/index_style.css">
+  <link rel="shortcut icon" href="/images/logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <title>Login Page</title>
 </head>
 
-<body onload="login()">
-    <div class="background">
-        <div class="login-form">
-            <div class="button">
-                <div id="slider"></div>
-                <button type="button" class="login-slider" onclick="login()">Login</button>
-                <button type="button" class="register-slider" onclick="register()">Register</button>
-            </div>
-            <form id="login-btn" class="user-input">
-                <input type="text" class="input-field" placeholder="Username" required>
-                <input type="password" class="input-field" placeholder="Password" required>
-                <input type="checkbox" class="check-box"><span>Remember Passowrd?</span>
-                <a href="home_screen.html">
-                    <button type="button" class="login">Login</button>
-                </a>
-            </form>
-            <form id="register-btn" class="user-input">
-                <input type="text" class="input-field" placeholder="Username" required>
-                <input type="email" class="input-field" placeholder="Email" required>
-                <input type="password" class="input-field" placeholder="Password" required>
-                <input type="checkbox" class="check-box" required><span>Agree to terms and conditions</span>
-                <a href="home_screen.html">
-                    <button type="button" class="login">Register</button>
-                </a>
+<body>
+  <div class="content">
+    <div class="sign-in-form">
+      <div class="slider-div">
+        <div id="slider"></div>
+        <button type="button" class="toggle-btn" onclick="move_login_form()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="move_register_form()">Register</button>
+      </div>
+      <img class="logo" src="/images/logo.png">
+      <form id="login" class="user-input">
+        <input type="text" class="input-field" placeholder="Username" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <input type="checkbox" class="tickbox"><span>Remember Password</span>
+        <button type="submit" class="submit-btn"><a class="button" href="home_screen.html">Login</a></button>
+      </form>
+      <form id="register" class="user-input">
+        <input type="text" class="input-field" placeholder="Name" required>
+        <input type="email" class="input-field" placeholder="Email" required>
+        <input type="text" class="input-field" placeholder="Username" required>
+        <input type="password" class="input-field" placeholder="Password" required>
+        <input type="password" class="input-field" placeholder="Confirm Password" required>
+        <input type="checkbox" class="tickbox" required>
+        <span>I agree to the
+          <a class="terms-and-conditions" href="/terms_and_confitions.html">terms and conditions</a>
+        </span>
+        <button type="submit" class="submit-btn"><a class="button" href="home_screen.html">Register</a></button>
+      </form>
+    </div>
+  </div>
 
+  <div id="footer">
+    <div class="footer-item footer-text">All rights reserved to Matiss Berzins & Dorian Herbiet
+      <div class="material-icons f18">copyright</div>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/SMART_criteria" class="footer-item footer-text-smart">What is the SMART
+      Framework?</a>
+    <div class="footer-item footer-text">Made in Delft, The Netherlands
+      <div class="material-icons f18">flag</div>
+    </div>
+  </div>
 
-            </form>
-        </div>
+  <script>
 
-        <script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("slider");
 
-            var x = document.getElementById("login-btn");
-            var y = document.getElementById("register-btn");
-            var z = document.getElementById("slider");
+    function move_login_form() {
+      x.style.left = "65px";
+      y.style.left = "410px";
+      z.style.left = "0px";
+    }
 
-            function register() {
-                x.style.left = "-400px";
-                y.style.left = "50px";
-                z.style.left = "110px";
-            }
-
-            function login() {
-                x.style.left = "50px";
-                y.style.left = "450px";
-                z.style.left = "0px";
-            }
-
-        </script>
+    function move_register_form() {
+      x.style.left = "-290px";
+      y.style.left = "65px";
+      z.style.left = "110px";
+    }
+  </script>
 
 </body>
 

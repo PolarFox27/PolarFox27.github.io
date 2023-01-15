@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/css/set_notifications_style.css">
     <link rel="shortcut icon" href="/images/logo.png">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <title>Notifications</title>
+    <title>Targets</title>
 </head>
 <body>
     <div id="header">
@@ -17,44 +17,6 @@
         <a href="index.html" class="header-item material-icons f36 header_btn">logout</a>
     </div>
     <div id="content">
-        <div class="flex_notifs">
-            <div class="flex_notif">
-                <div class="material-icons f36">notifications</div>
-                <button class="f28 btn_notif" onclick="showCreateNotif()">Mon 01/04/2024 09:52</button>
-    
-                <button class="material-icons f32 btn_delete">delete</button>
-            </div>
-            <div class="flex_notif">
-                <div class="material-icons f36">notifications</div>
-                <button class="f28 btn_notif" onclick="showCreateNotif()">Thu 11/11/2024 12:10</button>
-    
-                <button class="material-icons f32 btn_delete">delete</button>
-            </div>
-            <div class="flex_notif">
-                <div class="material-icons f36">notifications</div>
-                <button class="f28 btn_notif" onclick="showCreateNotif()">Sat 29/02/2029 17:17</button>
-    
-                <button class="material-icons f32 btn_delete">delete</button>
-            </div>
-        </div>
-        <div class="flex_btn_add"><button id="btn_add" class="material-icons f64" onclick="showCreateNotif()">add</button></div>
-
-        <form id="container_create_notif">
-            <input type="text" id="create_notif_text" placeholder="notification description" class="f18" required>
-            <input type="date" id="create_notif_date" class="f18 create_notif_element" required>
-            <input type="time" id="create_notif_time" class="f18 create_notif_element" required>
-            <button id="btn_done" class="f18" onclick="hideCreateNotif()">Done</button>
-        </form>
-        
-        
-        <div class="flexbox">
-            <a href="goal_details.html">
-                <button id="btn_cancel" class="btn_bottom f18">Cancel</button>
-            </a>
-            <a href="goal_details.html">
-                <button id="btn_save" class="btn_bottom f18">Save Changes</button>
-            </a>
-        </div>
     </div>
     <div id="footer">
         <div class="footer-item footer-text">All rights reserved to Matiss Berzins & Dorian Herbiet
@@ -64,17 +26,6 @@
         <a href="https://en.wikipedia.org/wiki/SMART_criteria" class="footer-item footer-text">What is the SMART Framework ?</a>
         <div class="footer-item footer-text">Made in Delft, The Netherlands</div>
     </div>
-
-    <script>
-        function showCreateNotif(){
-            var x = document.getElementById("container_create_notif");
-            x.style.visibility = "visible";
-        }
-        function hideCreateNotif(){
-            var x = document.getElementById("container_create_notif");
-            x.style.visibility = "hidden";
-        }
-    </script>
     
 </body>
 </html>
