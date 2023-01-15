@@ -4,19 +4,21 @@
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.content {
-  background: var(--color-4);
-  height: 100%;
-  width: 100%;
-  position: absolute;
+body {
+  background-color: var(--color-4);
+}
+
+#content {
+  min-height: calc(100vh - 40px);
 }
 
 .sign-in-form {
   background: var(--color-3);
   width: 400px;
-  height: 670px;
+  min-height: 670px;
   position: relative;
-  margin: 90px auto;
+  top: 90px;
+  margin: auto;
   overflow: hidden;
   transition: .8s;
 }
