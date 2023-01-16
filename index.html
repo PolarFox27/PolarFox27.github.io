@@ -17,8 +17,8 @@
     <div class="sign-in-form">
       <div class="slider-div">
         <div id="slider"></div>
-        <button type="button" class="toggle-btn" onclick="move_login_form()">Log In</button>
-        <button type="button" class="toggle-btn" onclick="move_register_form()">Register</button>
+        <button type="button" class="toggle-btn" onclick="move_to_login_form()">Log In</button>
+        <button type="button" class="toggle-btn" onclick="move_to_register_form()">Register</button>
       </div>
       <img class="logo" src="/images/logo.png">
       <form id="login" class="user-input">
@@ -64,17 +64,20 @@
     var a = document.getElementById("login");
     var b = document.getElementById("register");
     var c = document.getElementById("slider");
+    var d = document.getElementById("sign-in-form")
 
-    function move_login_form() {
+    function move_to_login_form() {
       a.style.left = "65px";
       b.style.left = "410px";
       c.style.left = "0px";
+      d.style.height = d.clientHeight + "-340px";
     }
 
-    function move_register_form() {
+    function move_to_register_form() {
       a.style.left = "-290px";
       b.style.left = "65px";
       c.style.left = "110px";
+      d.style.height = d.clientHeight + "340px"; //animation doesn't work? no clue why, could use some explaining..
     }
 
 
