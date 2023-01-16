@@ -8,34 +8,90 @@
 }
 
 * {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: sans-serif, verdana;
 }
 
-a, button{
+a,
+button {
     cursor: pointer;
 }
 
-.material-icons{
+.material-icons {
     vertical-align: bottom;
 }
 
-.f64, .material-icons.f64{font-size: 64px;}
-.f36, .material-icons.f36{font-size: 36px;}
-.f32, .material-icons.f32{font-size: 32px;}
-.f30, .material-icons.f30{font-size: 30px;}
-.f24, .material-icons.f24{font-size: 24px;}
-.f28, .material-icons.f28{font-size: 28px;}
-.f20, .material-icons.f20{font-size: 20px;}
-.f18, .material-icons.f18{font-size: 18px;}
-.f16, .material-icons.f16{font-size: 16px;}
-.f15, .material-icons.f15{font-size: 15px;}
+.bold {
+    font-weight: bold;
+}
 
-.col1{color: var(--color-1);}
-.col2{color: var(--color-2);}
-.col3{color: var(--color-3);}
-.col4{color: var(--color-4);}
-.col5{color: var(--color-5);}
-.col6{color: var(--color-6);}
+.f64,
+.material-icons.f64 {
+    font-size: 64px;
+}
+
+.f36,
+.material-icons.f36 {
+    font-size: 36px;
+}
+
+.f32,
+.material-icons.f32 {
+    font-size: 32px;
+}
+
+.f30,
+.material-icons.f30 {
+    font-size: 30px;
+}
+
+.f24,
+.material-icons.f24 {
+    font-size: 24px;
+}
+
+.f20,
+.material-icons.f20 {
+    font-size: 20px;
+}
+
+.f18,
+.material-icons.f18 {
+    font-size: 18px;
+}
+
+.f16,
+.material-icons.f16 {
+    font-size: 16px;
+}
+
+.f15,
+.material-icons.f15 {
+    font-size: 15px;
+}
+
+.col1 {
+    color: var(--color-1);
+}
+
+.col2 {
+    color: var(--color-2);
+}
+
+.col3 {
+    color: var(--color-3);
+}
+
+.col4 {
+    color: var(--color-4);
+}
+
+.col5 {
+    color: var(--color-5);
+}
+
+.col6 {
+    color: var(--color-6);
+}
 
 
 
@@ -82,13 +138,14 @@ body {
 
 #footer {
     display: flex;
+    position: relative;
     border-style: outset;
     width: 100%;
-    height:40px;
+    height: 40px;
     bottom: 0px;
     border-color: black;
     border-width: 1px;
-    background-color: white;
+    background: rgba(235, 235, 235, 0.7);
     justify-content: space-between;
 }
 
