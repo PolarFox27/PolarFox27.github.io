@@ -17,22 +17,6 @@
   text-decoration: underline;
 }
 
-#edit_target_btn_box {
-  position: absolute;
-  right: 20%;
-  top: 120px;
-}
-
-#edit_target_btn {
-  text-decoration: underline;
-  background-color: transparent;
-  border: none;
-}
-
-#edit_target_btn:hover {
-  text-shadow: 0px 0px 1px;
-}
-
 #target_list {
   display: flex;
   flex-direction: column;
@@ -57,7 +41,7 @@
 
 #btn_add:hover,
 .cancel_btn:hover,
-.done_btn:hover {
+.save_btn:hover {
   box-shadow: 0px 0px 5px #000;
 }
 
@@ -159,12 +143,15 @@
   justify-content: space-around;
 }
 
-.done_btn {
+.save_btn {
   width: 100px;
   height: 40px;
   border-radius: 15px;
   margin: auto;
   background-color: var(--color-4);
+  color: black;
+  border: solid 2px #000;
+  margin-left: 10px;
 }
 
 .cancel_btn {
@@ -173,4 +160,7 @@
   border-radius: 15px;
   margin: auto;
   background-color: var(--color-2);
+  color: black;
+  border: none;
+  opacity: 0.75;
 }
