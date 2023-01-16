@@ -15,12 +15,16 @@ body {
 .sign-in-form {
   background: var(--color-3);
   width: 400px;
-  min-height: 670px;
+  height: 670px;
   position: relative;
   top: 90px;
   margin: auto;
   overflow: hidden;
-  transition: .8s;
+  -moz-transition: height .5s;
+  -ms-transition: height .5s;
+  -o-transition: height .5s;
+  -webkit-transition: height .5s;
+  transition: height .5s;
 }
 
 .slider-div {
