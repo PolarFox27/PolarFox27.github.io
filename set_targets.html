@@ -65,7 +65,7 @@
         <div class="flex_btn_add"><button id="btn_add" class="material-icons f64"
                 onclick="showCreateTarget()">add</button>
         </div>
-        <div id="create_target">
+        <form id="create_target">
             <div class="create_target_top">
                 <div class="create_target_input"><input type="text" id="create_target_text" placeholder="Target Name"
                         class="f18" required></div>
@@ -79,12 +79,12 @@
             <div class="create_target_bottom">
                 <div class="button_box">
                     <button class="cancel_btn f20" onclick="hideCreateTarget()">Cancel</button>
-                    <button class="save_btn f20" onclick="hideCreateTarget()">Save</button>
+                    <input type="submit" class="save_btn f20" onclick="hideCreateTarget()">Save</input>
                 </div>
 
             </div>
 
-        </div>
+        </form>
     </div>
     <div id="footer">
         <div class="footer-item footer-text">All rights reserved to Matiss Berzins & Dorian Herbiet
