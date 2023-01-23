@@ -48,13 +48,13 @@
         <div class="flex_btn_add"><button id="btn_add" class="material-icons f64"
                 onclick="showCreateNotif()">add</button></div>
 
-        <form id="container_create_notif">
+        <form id="container_create_notif" action="set_notifications.html">
             <input type="text" id="create_notif_text" placeholder="notification description" class="f18" required>
             <input type="date" id="create_notif_date" class="f18 create_notif_element" required>
             <input type="time" id="create_notif_time" class="f18 create_notif_element" required>
             <div class="flexbox">
-                <button id="cancel_btn" class="btn_bottom f24" onclick="hideCreateNotif()">Cancel</button>
-                <input type="submit" id="save_btn" class="btn_bottom f24" onclick="hideCreateNotif()">Save</input>
+                <button type="submit" id="cancel_btn" class="btn_bottom f24" onclick="hideCreateNotif()">Cancel</button>
+                <input type="submit" id="save_btn" class="btn_bottom f24" value="Save"></input>
             </div>
         </form>
 
