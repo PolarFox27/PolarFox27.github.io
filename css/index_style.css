@@ -9,17 +9,17 @@ body {
 }
 
 #content {
-  min-height: calc(100vh - 40px);
+  min-height: calc(100vh - 129px);
 }
 
 .sign-in-form {
   background: var(--color-3);
   width: 400px;
-  height: 670px;
+  min-height: 670px;
   position: relative;
-  top: 90px;
+  top: 15px;
   margin: auto;
-  overflow: hidden;
+  overflow-x:hidden;
   -moz-transition: height .5s;
   -ms-transition: height .5s;
   -o-transition: height .5s;
@@ -65,7 +65,7 @@ body {
 }
 
 .input-field {
-  margin: 5px;
+  margin: 5px 5px 5px 0px;
   width: 100%;
   padding: 5px 0;
   border: 0;
@@ -73,6 +73,19 @@ body {
   outline: none;
   background: var(--color-3);
   font-size: 14px;
+}
+
+.input-field.valid{
+  border-bottom: 1px solid rgba(13, 241, 32, 0.5);
+}
+
+.input-field.invalid{
+  border-bottom: 2px solid rgba(250, 13, 13, 0.5);
+}
+
+.message{
+  font-size: 11px;
+  color: red;
 }
 
 .submit-btn {
@@ -132,4 +145,9 @@ span {
   position: absolute;
   width: 100px;
   margin: auto;
+}
+
+#hidden-div {
+  visibility: hidden;
+  width: 30%;
 }
